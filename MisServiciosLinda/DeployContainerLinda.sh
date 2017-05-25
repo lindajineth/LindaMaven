@@ -1,12 +1,9 @@
 #!/bin/bash
 cd /tmp
+git clone https://github.com/lindajineth/LindaMaven.git
+cd LindaMaven/MisServiciosLinda/
 
-curl -sL https://raw.githubusercontent.com/lindajineth/LindaMaven/master/MisServiciosLinda/src > /tmp/src/
 mvn clean package
-mvn build package
-#Descarga DockerFile para crear la Imagen del Proyecto
-curl -sL https://raw.githubusercontent.com/lindajineth/LindaMaven/master/MisServiciosLinda/DockerFile > /tmp/DockerFile
-
 
 #Crea la Imagen del Proyecto Apartir del Archivo DockerFile Descargado
 docker build -t lindajineth/miprimerdocker:lindaflyservices  -f DockerFile .
