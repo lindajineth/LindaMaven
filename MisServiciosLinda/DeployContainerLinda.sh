@@ -2,8 +2,8 @@
 cd /tmp
 
 curl -sL https://raw.githubusercontent.com/lindajineth/LindaMaven/master/MisServiciosLinda/src > /tmp/src/
-maven clean package
-maven build package
+mvn clean package
+mvn build package
 #Descarga DockerFile para crear la Imagen del Proyecto
 curl -sL https://raw.githubusercontent.com/lindajineth/LindaMaven/master/MisServiciosLinda/DockerFile > /tmp/DockerFile
 
