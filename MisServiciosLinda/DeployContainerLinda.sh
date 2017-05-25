@@ -3,7 +3,7 @@ cd /tmp
 maven clean package
 maven build package
 #Descarga DockerFile para crear la Imagen del Proyecto
-curl -sL https://raw.githubusercontent.com/lindajineth/LindaMaven/master/DockerFile > /tmp/DockerFile
+curl -sL https://raw.githubusercontent.com/lindajineth/LindaMaven/MisServiciosLinda/master/DockerFile > /tmp/DockerFile
 
 
 #Crea la Imagen del Proyecto Apartir del Archivo DockerFile Descargado
